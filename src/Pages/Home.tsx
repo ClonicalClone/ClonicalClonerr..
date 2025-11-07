@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Navbar from '../Components/Navbar'
 import MidHome from '../Components/MidHome'
 import FeaturedProducts from '../Components/FeaturedProducts'
