@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+
+
+* {
+
+    box-sizing: border-box;
+}
+
+/* Ensure consistent black background */
+
+
+/* In your App.css or global CSS */
+body, * {
+  color: #ffffff; /* Explicitly set white text color */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #ffffff; /* Ensure links are white */
+  text-decoration: none; /* Remove underlines if needed */
+}
+
+
+@keyframes shadower {
+    50% {
+        box-shadow: 0px 10px 170px -27px rgb(231, 231, 231);
+    }
+}
+
+.idk {
+    box-shadow: 0px 20px 173px -57px rgba(255, 255, 255, 0.5);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 170px;
+}
+
+.bt {
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 170px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.bt:hover{
+box-shadow: 0px 0px 173px -27px rgb(255, 255, 255) !important;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.in1 {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    text-indent: 10px;
+    background: rgb(0, 0, 0);
+}
+
+.b2 {
+    background: rgb(0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding-inline: 40px !important;
+    height: 40px;
+}
+
+.na2 {
+    box-shadow: 0px -20px 200px -100px white;
+}
+
+
+
+@keyframes idm {
+    50% {
+        box-shadow: 0px 0px 173px -27px rgb(255, 255, 255);
+    }
+}
+
+.incs {
+    border: 1px solid white;
+}
+
+/* Scrollbar styling - Consolidated here */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    /* Added for better appearance */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffa200;
+}
+
+.abd {
+    border: 1px solid white;
+}
+        input[type="range"] {
+            -webkit-appearance: none;
+            /* Safari and Chrome */
+            -moz-appearance: none;
+            /* Firefox */
+            appearance: none;
+            background: transparent;
+            /* Remove default background */
+            cursor: pointer;
+            
+            /* Adjust width as needed */
+        }
+            
+            
+            @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    /* Ensure it stays black in dark mode */
+    --foreground: #ededed;
+  }
+}
+
+/* Force black background on html and body */
+html {
+  background: #000000 !important;
+}
+
+body {
+  background: #000000 !important;
+  /* More specific black value */
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Scrollbar styling - Fixed */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffa200;
+}
