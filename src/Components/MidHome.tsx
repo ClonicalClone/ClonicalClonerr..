@@ -1,23 +1,29 @@
-import React, {useEffect, useRef} from 'react'
+import  {useEffect, useRef} from 'react'
 import '../App.css'
 
 import Lenis from  'lenis';
 
 
 const MidHome = () => {
-    const lenis = useRef(null);
+    const lenis = useRef<Lenis | null>(null);
 
   useEffect(() => {
     lenis.current = new Lenis();
 
-    const animate = (time) => {
-      lenis.current.raf(time);
+    interface AnimateFn {
+      (time: number): void;
+    }
+
+    const animate: AnimateFn = (time) => {
+      lenis.current!.raf(time);
       requestAnimationFrame(animate);
     };
 
     requestAnimationFrame(animate);
   return () => {
-      lenis.current.destroy();
+      if (lenis.current) {
+        lenis.current.destroy();
+      }
     };
   }, []);
 

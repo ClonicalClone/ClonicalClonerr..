@@ -1,6 +1,6 @@
 
 import { FaQuoteRight } from "react-icons/fa"; 
-import React from 'react'
+
 
 const Testimonial = () => {
   return (

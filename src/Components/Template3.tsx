@@ -2,7 +2,7 @@
 'use client';
 
 import { BsArrowRightShort } from "react-icons/bs"; 
-import React from 'react'
+
 import Navbar from './Navbar'
 import Footers from './Footers'
 import '../App.css'

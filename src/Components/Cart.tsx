@@ -1,7 +1,5 @@
 /* eslint-disable */
-import React from "react";
 import { useLocalStorage, useEventListener } from "usehooks-ts";
-import CheckoutButton from "./CheckoutButton";
 import CheckoutBT from "./CheckoutButton";
 
 type CartItem = {

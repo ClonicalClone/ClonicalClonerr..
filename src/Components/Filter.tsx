@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { BsArrowRightShort } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../App.css';
 
 const Filters = ({ onApplyFilters, onClose, currentFilters }: any) => {

@@ -1,7 +1,7 @@
 /* eslint-disable */
 "use client";
 
-import { toast } from "react-toastify";
+
 
 type CheckoutBTProps = {
   total: number;

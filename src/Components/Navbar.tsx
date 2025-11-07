@@ -12,7 +12,7 @@ import {
 } from "@clerk/clerk-react";
 
 // Icons
-import React, { useState } from "react";
+import { useState } from "react";
 import { RiSearch2Line } from "react-icons/ri";
 import { CgShoppingCart } from "react-icons/cg";
 import { AiOutlineUser } from "react-icons/ai";

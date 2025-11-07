@@ -1,11 +1,11 @@
 'use client';  
 import './App.css'
-import Navbar from './Components/Navbar';
-import Homes from './Components/Home';
-import Newsletter from './Components/Newsletter';
-import FeaturedProducts from './Components/FeaturedProducts';
-import Footers from './Components/Footers';
-import Testimonial from './Components/Testimonial';
+import Navbar from './Navbar';
+import Homes from '../Pages/Home';
+import Newsletter from './Newsletter';
+import FeaturedProducts from './FeaturedProducts';
+import Footers from './Footers';
+import Testimonial from './Testimonial';
 
 import { useEffect } from 'react';
 import Lenis from 'lenis';

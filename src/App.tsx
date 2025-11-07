@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './App.css'
 import Contact from './Pages/Contact';
 import Product from './Pages/Product';

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React from 'react'
+
 
 const Template2 = (parms : any) => {
   return (

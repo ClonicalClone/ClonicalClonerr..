@@ -5,17 +5,8 @@ import { ImCross } from "react-icons/im";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer } from 'react-toastify';
-import { useLocalStorage } from "usehooks-ts";
 
-type CartItem = {
-  id: string;
-  name: string;
-  image: string;
-  color: string;
-  price: number;
-  quantity: number;
-};
+
 
 export default function CheckoutModal() {
   const [isOpen, setIsOpen] = useState(false);

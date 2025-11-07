@@ -6,9 +6,7 @@ import Navbar from '../Components/Navbar';
 import Footers from '../Components/Footers';
 import '../App.css'
 import data from '../data.json'
-import Lenis from 'lenis';
-import { useEffect, useState } from 'react';
-import { ClerkProvider } from "@clerk/clerk-react";
+import {  useState } from 'react';
 import Filters from '../Components/Filter';
 
 export default function Product() {
@@ -141,7 +139,7 @@ export default function Product() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     />
                   </Link>
-                  <div className="!mt-4 flex flex-col items-center">
+                  <div className="mt-4! flex flex-col items-center">
                     <h2 className="text-white title-font text-lg font-medium hover:text-gray-300 transition-colors text-center">
                       <Link to={`/products/${product.id}`}>
                         {product.name}
