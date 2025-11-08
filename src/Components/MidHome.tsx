@@ -2,6 +2,7 @@ import  {useEffect, useRef} from 'react'
 import '../App.css'
 
 import Lenis from  'lenis';
+import { Link } from 'react-router-dom';
 
 
 const MidHome = () => {
@@ -31,7 +32,7 @@ const MidHome = () => {
     <>
       <section className="w-full overflow-x-hidden ">
         {/* Hero Section */}
-        <div className="flex flex-col lg:flex-row w-full min-h-screen  px-4 sm:px-6 lg:px-14 xl:px-12 2xl:px-16 py-8 lg:py-0 gap-12 md:mt-0 mt-50 overflow-x-hidden">
+        <div className="flex flex-col lg:flex-row w-full min-h-screen  px-4 sm:px-6 lg:px-14 xl:px-12 2xl:px-16 py-8 lg:py-0 gap-12 md:mt-0  overflow-x-hidden">
 
                     {/* Text Content - Order 2 on mobile, Order 1 on desktop */}
                     <div className='order-2 lg:order-1 w-full lg:w-1/2 flex items-center justify-center lg:justify-start h-auto lg:h-screen py-8 lg:py-0 '>
@@ -43,17 +44,17 @@ const MidHome = () => {
                             </h1>
 
                             {/* Responsive button */}
-                            <a
-                                className=' bt '
-                                href='/Product'
+                            <Link
+                                className=' bt444 '
+                                to='/Product'
                             >
                                 Shop Now
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
                     {/* Image Content - Order 1 on mobile, Order 2 on desktop */}
-                    <div className='order-1 lg:order-2 w-full lg:w-1/2 flex items-center justify-center overflow-hidden h-64 sm:h-80 md:h-96 lg:h-screen -mt-12 md:mt-0'>
+                    <div className='order-1 lg:order-2 w-full lg:w-1/2 flex items-center justify-center overflow-hidden h-full sm:h-80 md:h-96 lg:h-screen  md:mb-0'>
                         <div className="relative w-full h-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl">
                             <img
                                 src="/ss.avif"

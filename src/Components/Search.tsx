@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import data from "../data.json";
+import { Link } from "react-router-dom";
 
 export default function SearchOverlay({ onClose }: { onClose: () => void }) {
   // Ref to focus the input when the overlay opens
@@ -65,7 +66,7 @@ export default function SearchOverlay({ onClose }: { onClose: () => void }) {
                   key={index}
                   className="bg-black p-4 rounded border-b-2 border-l-2"
                 >
-                  <a href={`/products/${item.id}`}>{item.name}</a>
+                  <Link to={`/products/${item.id}`}>{item.name}</Link>
                 </div>
               ))
             ) : (

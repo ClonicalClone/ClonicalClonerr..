@@ -46,10 +46,13 @@ const Footers = () => {
        
          
           <li>
-                  <a className=" hover:text-gray-400" href="/product">Watches</a>
+                  <Link className=" hover:text-gray-400" to="/product">Watches</Link>
           </li>
           <li>
-          <a className=" hover:text-gray-400" href="/feature">Features</a>
+          <Link className=" hover:text-gray-400" to="/feature">Features</Link>
+          </li>
+           <li>
+          <Link className=" hover:text-gray-400" to="/offers">Offers</Link>
           </li>
         </ul>
       </div>
@@ -67,13 +70,13 @@ const Footers = () => {
               <a className="" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <ImFacebook className="w-5 h-5"  />
         </a> 
-              <a className="!ml-3 " href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <a className="ml-3 " href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <AiOutlineTwitter className="w-5 h-5"  />
         </a>
-              <a className="!ml-3 " href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a className="ml-3 " href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <AiOutlineInstagram className="w-5 h-5" />
         </a>
-              <a className="!ml-3 " href="mailto:clonicalcloner@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Customer Service">
+              <a className="ml-3 " href="mailto:clonicalcloner@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Customer Service">
                 <AiOutlineCustomerService className="w-5 h-5" />
         </a>
       </span>

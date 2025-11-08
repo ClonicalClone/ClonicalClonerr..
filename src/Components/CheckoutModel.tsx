@@ -3,7 +3,7 @@ import { ImCross } from "react-icons/im";
 /* eslint-disable */
 "use client";
 import React, { useEffect, useState } from "react";
-import { toast } from "react-toastify";
+import { Slide, toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -83,12 +83,38 @@ export default function CheckoutModal() {
       
 
         <button
-          type="submit"
+          type="submit" onClick={notify}
           className="w-full bg-green-600 hover:bg-green-700 p-2 rounded font-semibold cursor-pointer"
         >
           Pay Now
         </button> 
+        <ToastContainer position="bottom-right"
+               autoClose={5000}
+               hideProgressBar={false}
+               newestOnTop={false}
+               closeOnClick
+               rtl={false}
+               pauseOnFocusLoss
+               draggable
+               pauseOnHover
+               theme="dark"
+               transition={Slide}/>
       </form>
     </div>
   );
 }
+ 
+const notify = () => {
+  toast.success('Subscribed successfully!', {
+    position: "bottom-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "black",
+        transition: Slide,
+      })
+     
+    }
+

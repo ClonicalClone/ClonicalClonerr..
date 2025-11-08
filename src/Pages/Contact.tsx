@@ -7,22 +7,41 @@ import Footers from '../Components/Footers';
 import '../App.css'
 import { useEffect } from 'react';
 import Lenis from 'lenis';
-import { toast } from 'react-toastify';
+import { Slide, toast, ToastContainer } from 'react-toastify';
 
 const Contact = () => {
 const sendmsg = () =>{
-  if (document.querySelector('.na') && document.querySelector('.em') && document.querySelector('.msg')) {
-    let nameInput = (document.querySelector('.na') as HTMLInputElement).value;
-    let emailInput = (document.querySelector('.em') as HTMLInputElement).value;
-    let messageInput = (document.querySelector('.msg') as HTMLInputElement).value;
+  const nameInputElement = document.querySelector('.na') as HTMLInputElement | null;
+  const emailInputElement = document.querySelector('.em') as HTMLInputElement | null;
+  const messageInputElement = document.querySelector('.msg') as HTMLTextAreaElement | null;
+
+  if (nameInputElement?.value && emailInputElement?.value && messageInputElement?.value !== "") {
+    const nameInput = (document.querySelector('.na') as HTMLInputElement).value;
+    const emailInput = (document.querySelector('.em') as HTMLInputElement).value;
+    const messageInput = (document.querySelector('.msg') as HTMLInputElement).value;
      toast.success(`Thank you ${nameInput} for contacting us! We have received your message and will get back to you at ${emailInput} soon.`);
     console.log(nameInput, emailInput, messageInput);
    
-    nameInput = "";
-    emailInput = "";
-    messageInput = "";
+    (document.querySelector('.na') as HTMLInputElement).value = "";
+    (document.querySelector('.em') as HTMLInputElement).value = "";
+    (document.querySelector('.msg') as HTMLInputElement).value = "";
   }
-}
+  else{
+    toast.error('Please fill in all fields before submitting the form.', {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      newestOnTop: false,
+      closeOnClick: true,
+      rtl: false,
+      pauseOnFocusLoss: true,
+      draggable: true,
+      pauseOnHover: true,
+      theme: "dark",
+      transition: Slide
+    });
+  }}
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -80,7 +99,17 @@ const sendmsg = () =>{
         <button onClick={sendmsg} className="inline-flex h-12 animate-shimmer items-center justify-center hover:scale-115 hover:transition hover:duration-500 border border-slate-800 py-3 rounded-full bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-9 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 hover:cursor-pointer">
           Send Message
         </button>
-
+<ToastContainer position="bottom-right"
+               autoClose={5000}
+               hideProgressBar={false}
+               newestOnTop={false}
+               closeOnClick
+               rtl={false}
+               pauseOnFocusLoss
+               draggable
+               pauseOnHover
+               theme="dark"
+               transition={Slide}/>
       </div>
     </div>
   </div>

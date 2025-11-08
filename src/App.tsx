@@ -12,6 +12,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CheckoutModal from "./Components/CheckoutModel";
 import Features from './Pages/Features';
+import Offers from './Pages/Offers';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
         <Route path="/products" element={<Product />} />
         <Route path="/features" element={<Features />} />
         <Route path="/feature" element={<Features />} />
+        <Route path="/offers" element={<Offers />} />
+    
+        <Route path="/offer" element={<Offers />} />
 
         {/* ✅ Dynamic Product Detail */}
         <Route path="/products/:productId" element={<SubProducts />} />

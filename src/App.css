@@ -38,7 +38,7 @@ a {
     padding-bottom: 170px;
 }
 
-.bt {
+.bt444 {
     border-radius: 10px;
     padding: 15px 20px;
     color: white;
@@ -46,11 +46,15 @@ a {
     text-align: center;
     width: 170px;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
 }
-.bt:hover{
-box-shadow: 0px 0px 173px -27px rgb(255, 255, 255) !important;
+.bt444:hover{
+box-shadow: 0px 0px 173px -17px rgb(255, 255, 255) !important;
     scale: 1.1;
     transition: 0.3s;
 }
@@ -94,7 +98,7 @@ box-shadow: 0px 0px 173px -27px rgb(255, 255, 255) !important;
     background: #000000;
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background: #ffffff;
     transition: all 0.3s ease;
     border-radius: 3px;
@@ -153,11 +157,11 @@ body {
   background: #000000;
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: #ffffff;
   transition: all 0.3s ease;
 }
 
-::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
   background: #ffa200;
 }
