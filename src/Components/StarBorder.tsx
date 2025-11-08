@@ -23,9 +23,11 @@ const StarBorder = <T extends React.ElementType = 'button'>({
   return (
     <Component
       className={`relative inline-block overflow-hidden rounded-[20px] ${className}`}
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       {...(rest as any)}
       style={{
         padding: `${thickness}px 0`,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ...(rest as any).style
       }}
     >
