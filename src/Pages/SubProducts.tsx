@@ -34,11 +34,7 @@ export default function ProductPage() {
   }
 
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-duration="800"
-      className="min-h-screen flex justify-center items-center bg-black"
-    >
+  
       <Template3
         brand={productObj.brand}
         name={productObj.name}
@@ -51,7 +47,9 @@ export default function ProductPage() {
         material={productObj.strap_material}
         color={productObj.strap_color}
         type={productObj.type}
+         data-aos="fade-up"
+      data-aos-duration="800"
       />
-    </div>
+  
   );
 }

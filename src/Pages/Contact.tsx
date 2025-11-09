@@ -20,20 +20,20 @@ const Contact = () => {
       nameInputElement &&
       emailInputElement &&
       messageInputElement &&
-      nameInputElement.value !== '' &&
-      emailInputElement.value !== '' &&
-      messageInputElement.value !== ''
+      nameInputElement.textContent !== '' &&
+      emailInputElement.textContent !== '' &&
+      messageInputElement.textContent !== ''
     ) {
-      const nameInput = nameInputElement.value
-      const emailInput = emailInputElement.value
+      const nameInput = nameInputElement.textContent
+      const emailInput = emailInputElement.textContent
 
       toast.success(
         `Thank you ${nameInput} for contacting us! We’ve received your message and will get back to you at ${emailInput} soon.`
       )
 
-      nameInputElement.value = ''
-      emailInputElement.value = ''
-      messageInputElement.value = ''
+      nameInputElement.textContent = ''
+      emailInputElement.textContent = ''
+      messageInputElement.textContent = ''
     } else {
       toast.error('Please fill in all fields before submitting the form.', {
         position: 'bottom-right',

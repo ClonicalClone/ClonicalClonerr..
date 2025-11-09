@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import data from "../data.json";
 import { Link } from "react-router-dom";
 import AOS from "aos";
+
 import "aos/dist/aos.css";
 
 export default function SearchOverlay({ onClose }: { onClose: () => void }) {

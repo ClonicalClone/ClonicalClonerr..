@@ -9,7 +9,7 @@ const FeaturedProducts = () => {
   return (
     <section id="discount" className="text-white  min-height-200 w-full bg-black flex md:!pl-20 md:!py-25 !mt-6 flex-col  md:items-start md:justify-start items-center justify-center">
      <div className='!mb-10 flex flex-col align-center md:items-start justify-center  items-center '>
-            <h1 className="sm:text-3xl text-2xl font-medium title-font !mb-2 text-white h-10">Featured Products</h1>
+            <h2 className="sm:text-3xl text-2xl font-medium title-font !mb-2 text-white h-10">Featured Products</h2>
         <div className="h-1 w-20 bg-white rounded"></div>
       </div>
       

@@ -67,16 +67,16 @@ const Footers = () => {
         
       </p>
       <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start gap-2">
-              <a className="" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <a className="" href="https://www.facebook.com/" target="_blank" rel="noopener nofollow noreferrer" aria-label="Facebook">
                 <ImFacebook className="w-5 h-5"  />
         </a> 
-              <a className="ml-3 " href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <a className="ml-3 " href="https://www.twitter.com/" target="_blank" rel="noopener nofollow noreferrer" aria-label="Twitter">
                 <AiOutlineTwitter className="w-5 h-5"  />
-        </a>
-              <a className="ml-3 " href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        </a> 
+              <a className="ml-3 " href="https://www.instagram.com/" target="_blank"  rel="noopener nofollow noreferrer" aria-label="Instagram">
                 <AiOutlineInstagram className="w-5 h-5" />
         </a>
-              <a className="ml-3 " href="mailto:clonicalcloner@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Customer Service">
+              <a className="ml-3 " href="mailto:clonicalcloner@gmail.com" target="_blank" rel="noopener nofollow noreferrer" aria-label="Customer Service">
                 <AiOutlineCustomerService className="w-5 h-5" />
         </a>
       </span>

@@ -9,7 +9,7 @@ const Testimonial = () => {
       
   <div className="container !px-5 !py-54 !mx-auto">
      <div className="xl:w-1/2 lg:w-3/4 w-full !mx-auto text-center scale-90 md:scale-100">
-     <h1 className="text-white text-3xl font-medium title-font mb-4 flex text-center w-full justify-center items-center">Testimonials  </h1>
+     <h2 className="text-white text-3xl font-medium title-font mb-4 flex text-center w-full justify-center items-center">Testimonials  </h2>
      <br/> <br/>
       <FaQuoteRight className="inline-block w-8 h-8 text-white !mb-8"/>
       <p className="leading-relaxed text-lg text-neutral-400">I recently purchased a Rolex watch from this store, and I couldn’t be happier with the experience. The ordering process was simple, the delivery was fast, and the watch arrived in perfect condition. It looks even better in person and feels very high-quality. I’ll definitely shop here again!</p>
