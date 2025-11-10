@@ -1,22 +1,9 @@
 "use client";
 
-
-
-
-import {
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  SignUpButton,
-  UserButton,
-} from "@clerk/clerk-react";
-
 // Icons
 import { useState } from "react";
 import { RiSearch2Line } from "react-icons/ri";
 import { CgShoppingCart } from "react-icons/cg";
-import { AiOutlineUser } from "react-icons/ai";
-import { AiOutlineLogin } from "react-icons/ai"; 
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 
 // Other Files
@@ -50,29 +37,7 @@ const Navbar = () => {
           <RiSearch2Line className="hover:text-gray-400 cursor-pointer" onClick={() => setIsSearchOpen(true)}/>
           <CgShoppingCart className="hover:text-gray-400 cursor-pointer" onClick={() => setIsCartOpen(true)}/>
 
-            <SignedIn>
-                <UserButton appearance={{
-                   elements: {
-                     navbar: {
-                       display: 'none',
-                       backgroundColor: 'black',
-                     },
-                   },
-                }}/>
-            </SignedIn>
-
-            <SignedOut>
-                <SignUpButton mode="modal">
-                    <button className="hover:text-gray-400">
-                      <AiOutlineUser />
-                    </button>
-                  </SignUpButton>
-                  <SignInButton mode="modal">
-                    <button className="hover:text-gray-400">
-                      <AiOutlineLogin />
-                    </button>
-                  </SignInButton>
-            </SignedOut>
+            
           </div>
 
           {/* Mobile Menu Button */}
@@ -106,16 +71,7 @@ const Navbar = () => {
             <div className="flex gap-6 text-[26px] mt-4">
                 <RiSearch2Line  className="hover:text-gray-400"  onClick={() => setIsSearchOpen(true)}/>
                 <CgShoppingCart className="hover:text-gray-400 "  onClick={() => setIsCartOpen(true)}/>
-                <SignedIn>
-                     <UserButton />
-                   </SignedIn>
-                   <SignedOut>
-                     <SignInButton mode="modal">
-                       <button>
-                         <AiOutlineUser />
-                       </button>
-                    </SignInButton>
-                 </SignedOut>
+        
             </div>
             </div>
           </>
