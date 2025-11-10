@@ -20,20 +20,20 @@ const Contact = () => {
       nameInputElement &&
       emailInputElement &&
       messageInputElement &&
-      nameInputElement.textContent !== '' &&
-      emailInputElement.textContent !== '' &&
-      messageInputElement.textContent !== ''
+      nameInputElement.value !== '' &&
+      emailInputElement.value !== '' &&
+      messageInputElement.value !== ''
     ) {
-      const nameInput = nameInputElement.textContent
-      const emailInput = emailInputElement.textContent
+      const nameInput = nameInputElement.value
+      const emailInput = emailInputElement.value
 
       toast.success(
         `Thank you ${nameInput} for contacting us! We’ve received your message and will get back to you at ${emailInput} soon.`
       )
 
-      nameInputElement.textContent = ''
-      emailInputElement.textContent = ''
-      messageInputElement.textContent = ''
+      nameInputElement.value = ''
+      emailInputElement.value = ''
+      messageInputElement.value = ''
     } else {
       toast.error('Please fill in all fields before submitting the form.', {
         position: 'bottom-right',
@@ -47,6 +47,7 @@ const Contact = () => {
         theme: 'dark',
         transition: Slide,
       })
+      console.log('Form submission failed: Missing input values.', nameInputElement, emailInputElement, messageInputElement)
     }
   }
 
